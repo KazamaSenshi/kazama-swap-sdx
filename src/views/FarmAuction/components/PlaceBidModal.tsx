@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
 import { ethers } from 'ethers'
-import { Modal, Text, Flex, BalanceInput, Box, Button, KazamaRoundIcon } from '@kazamaswap/uikit'
+import { Modal, Text, Flex, BalanceInput, Box, Button, PancakeRoundIcon } from '@kazamaswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'
 import { formatNumber, getBalanceAmount, getBalanceNumber } from 'utils/formatBalance'
@@ -156,7 +156,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
         <Flex justifyContent="space-between" alignItems="center" pb="8px">
           <Text>{t('Bid a multiple of 10')}</Text>
           <Flex>
-            <KazamaRoundIcon width="24px" height="24px" mr="4px" />
+            <PancakeRoundIcon width="24px" height="24px" mr="4px" />
             <Text bold>KAZAMA</Text>
           </Flex>
         </Flex>
